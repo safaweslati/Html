@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription en licence</title>
+    <style>
+        legend{
+           text-align: center;
+        }
+        .cen{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Informations Personnelles</legend>
+        votre nom <input type="text" size="40" maxlength="50" name="nom" placeholder="Votre nom?">
+        <br><br>
+        votre prénom <input type="text" size="45" maxlength="50" name="prenom" placeholder="Votre prénom??">
+        <br><br>
+        Votre age <input type="number" placeholder="Votre age?" min=0>
+        <br><br>
+        Votre adresse <textarea placeholder="votre adresse??" cols="30" rows="10"></textarea>
+        <br><br>
+        adresse email <input type="email">
+        <br><br>
+        url de site de l'etudiant <input type="url">
+        <br><br>
+        Date de naissance <input type="date">
+        <br><br>
+        Mot de passe <input type="password" name="pws" size="15" maxlength="30" required>
+        <br><br>
+        Retapez votre mot de passe <input type="password" name="pws" size="15" maxlength="30">
+    </fieldset>
+    <fieldset>
+        <legend>Gestion des groupes et des options</legend>
+        Votre groupe: <input type="checkbox"  name="grp" value="grp1">Groupe 1
+        <input type="checkbox"  name="grp" value="grp2">Groupe 2
+        <input type="checkbox"  name="grp" value="grp3">Groupe 3
+        <br><br>
+       Numéro de carte d'étudiant <input type="text" placeholder="Numéro de carte etudiant">
+       <br><br>
+       Choisissez les options que vous désirez <select name="op">
+           <option value="ht">html5</option>
+           <option value="net">.Net</option>
+           <option value="Fl">Flex</option>
+           <option value="An">Android</option>
+           <option value="J2">J2ee</option>
+       </select>
+    </fieldset>
+    <p>
+    <a href="ins.html"><input type="submit" value="valider"></a>
+   <input type="reset" value="rénitialiser" >
+    </p>
+    <label for="uni">Votre université :</label><input type="text" size="20" maxlength="40"  id="uni" pattern="[I][N][S][A][T][0-9]{4}"> 
+</body>
+</html>
