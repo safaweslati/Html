@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vote</title>
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/simplex/bootstrap.min.css">
+    <style>
+    .form-check{
+        padding: 2%;
+    }
+    </style>
+</head>
+<body>
+<form action="msg.php" method="post">
+    <div class="container">
+        <label>Question : ............</label>
+    <div class="form-check">
+        <label class="form-check-label">Bon</label>
+        <input type="radio" class="form-check-input" name="reponse" value="bon" checked>
+
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">Moyen</label>
+        <input type="radio" class="form-check-input" name="reponse" value="moyen">
+    </div>
+    <div class="form-check">
+        <label class="form-check-label">Mauvais</label>
+        <input type="radio" class="form-check-input" name="reponse" value="mauvais">
+    </div>
+    <button type="submit"class="btn btn-dark" value="Submit">Votez</button>
+    </div>
+</form>
+</body>
+</html>

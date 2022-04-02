@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>livraison</title>
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/darkly/bootstrap.css">
+    <style>
+        .form-group{
+            padding: 3%;
+        }
+    </style>
+</head>
+<body>
+<form action="recap.php" method="post" enctype="multipart/form-data">
+ <div style="margin: 20%">
+    <div class="form-group">
+        <label>Nom</label>
+        <input type="text" class="form-control"  placeholder="Entrez votre nom" name="name">
+    </div>
+    <div class="form-group">
+        <label>Prénom</label>
+        <input type="text" class="form-control" placeholder="Entrez votre prénom" name="firstname">
+    </div>
+     <div class="form-group">
+         <label>CIN</label>
+         <input type="file" class="form-control" placeholder="Entrez votre CIN" name="CIN">
+     </div>
+    <div class="form-group">
+        <label>Nombre de Sandwitchs</label>
+        <input type="number" class="form-control" placeholder="nombre Sandwitchs" name="nbreSan" min="1">
+    </div>
+    <div class="form-group" >
+        <label>Adresse</label>
+        <textarea  name="adr" rows="1" cols="20"></textarea>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Type de Sandwitch</label>
+        <select id="inputtype" class="form-control">
+            <option>Viande</option>
+            <option>Poulet</option>
+            <option>Escalope</option>
+        </select>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+                <label>Harissa</label>
+                <input type="checkbox">
+                <br>
+                <label>Salade</label>
+                <input type="checkbox">
+                <br>
+                <label>Mayonnaise</label>
+                <input type="checkbox">
+        </div>
+
+    </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+ </div>
+</form>
+ </div>
+</form>
+</body>
+</html>
